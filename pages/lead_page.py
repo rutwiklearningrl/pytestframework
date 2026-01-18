@@ -22,6 +22,7 @@ class LeadPage:
         self.setLastname(lname)
         self.setCompany(company)
         self.clickSave()
+        print("pycharm")
 
     def setLastname(self,lname):
         self.driver.find_element(*self.elm_tb_lastname).send_keys(lname)

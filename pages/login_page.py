@@ -22,6 +22,7 @@ class LoginPage:
         self.setUsername(uid)
         self.setPassword(pwd)
         self.clickLogin()
+        print("hello git")
 
     def setUsername(self,uid):
         self.driver.find_element(*self.elm_tb_username).clear()
@@ -33,6 +34,7 @@ class LoginPage:
 
     def clickLogin(self):
         self.driver.find_element(*self.elm_btn_login).click()
+        print("hello java")
 
     def verifyErrorMsg(self):
         return self.driver.find_element(*self.elm_msg_error).is_displayed()
