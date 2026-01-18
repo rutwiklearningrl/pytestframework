@@ -33,6 +33,7 @@ class LoginPage:
 
     def clickLogin(self):
         self.driver.find_element(*self.elm_btn_login).click()
+        print("hello java")
 
     def verifyErrorMsg(self):
         return self.driver.find_element(*self.elm_msg_error).is_displayed()
